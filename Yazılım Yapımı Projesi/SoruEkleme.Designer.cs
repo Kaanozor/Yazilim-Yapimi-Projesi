@@ -49,7 +49,7 @@ namespace Yazılım_Yapımı_Projesi
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbSoruEkle.EnableAutoDragDrop = true;
-            this.rtbSoruEkle.Location = new System.Drawing.Point(12, 12);
+            this.rtbSoruEkle.Location = new System.Drawing.Point(12, 16);
             this.rtbSoruEkle.Name = "rtbSoruEkle";
             this.rtbSoruEkle.Size = new System.Drawing.Size(712, 577);
             this.rtbSoruEkle.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace Yazılım_Yapımı_Projesi
             // 
             // tbUnit
             // 
-            this.tbUnit.Location = new System.Drawing.Point(805, 16);
+            this.tbUnit.Location = new System.Drawing.Point(815, 19);
             this.tbUnit.Name = "tbUnit";
             this.tbUnit.Size = new System.Drawing.Size(107, 20);
             this.tbUnit.TabIndex = 1;
@@ -65,24 +65,26 @@ namespace Yazılım_Yapımı_Projesi
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(758, 23);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(748, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ünite =";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(748, 49);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(741, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Bölüm =";
             // 
             // tbBölüm
             // 
-            this.tbBölüm.Location = new System.Drawing.Point(805, 42);
+            this.tbBölüm.Location = new System.Drawing.Point(815, 42);
             this.tbBölüm.Name = "tbBölüm";
             this.tbBölüm.Size = new System.Drawing.Size(107, 20);
             this.tbBölüm.TabIndex = 4;
@@ -95,7 +97,7 @@ namespace Yazılım_Yapımı_Projesi
             "B",
             "C",
             "D"});
-            this.cbRightAns.Location = new System.Drawing.Point(805, 68);
+            this.cbRightAns.Location = new System.Drawing.Point(815, 68);
             this.cbRightAns.Name = "cbRightAns";
             this.cbRightAns.Size = new System.Drawing.Size(107, 21);
             this.cbRightAns.TabIndex = 5;
@@ -103,15 +105,16 @@ namespace Yazılım_Yapımı_Projesi
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(736, 76);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(727, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.Size = new System.Drawing.Size(82, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "Doğru Şık =";
             // 
             // buttonSoruEkle
             // 
-            this.buttonSoruEkle.BackColor = System.Drawing.Color.Firebrick;
+            this.buttonSoruEkle.BackColor = System.Drawing.Color.Khaki;
             this.buttonSoruEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonSoruEkle.Location = new System.Drawing.Point(761, 185);
             this.buttonSoruEkle.Name = "buttonSoruEkle";
@@ -123,22 +126,24 @@ namespace Yazılım_Yapımı_Projesi
             // 
             // buttonFont
             // 
+            this.buttonFont.BackColor = System.Drawing.Color.Khaki;
             this.buttonFont.Location = new System.Drawing.Point(730, 115);
             this.buttonFont.Name = "buttonFont";
             this.buttonFont.Size = new System.Drawing.Size(98, 37);
             this.buttonFont.TabIndex = 8;
             this.buttonFont.Text = "Font";
-            this.buttonFont.UseVisualStyleBackColor = true;
+            this.buttonFont.UseVisualStyleBackColor = false;
             this.buttonFont.Click += new System.EventHandler(this.buttonFont_Click);
             // 
             // buttonRenk
             // 
+            this.buttonRenk.BackColor = System.Drawing.Color.Khaki;
             this.buttonRenk.Location = new System.Drawing.Point(836, 115);
             this.buttonRenk.Name = "buttonRenk";
             this.buttonRenk.Size = new System.Drawing.Size(98, 37);
             this.buttonRenk.TabIndex = 9;
             this.buttonRenk.Text = "Renk";
-            this.buttonRenk.UseVisualStyleBackColor = true;
+            this.buttonRenk.UseVisualStyleBackColor = false;
             this.buttonRenk.Click += new System.EventHandler(this.buttonRenk_Click);
             // 
             // fontDialog1
@@ -149,7 +154,7 @@ namespace Yazılım_Yapımı_Projesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkViolet;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(946, 601);
             this.Controls.Add(this.buttonRenk);
             this.Controls.Add(this.buttonFont);

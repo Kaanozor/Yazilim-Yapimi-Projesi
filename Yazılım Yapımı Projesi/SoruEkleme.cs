@@ -14,7 +14,8 @@ namespace Yazılım_Yapımı_Projesi
     
     public partial class SoruEkleme : Form
     {
-        static string SqlPath = @"Data Source=DESKTOP-OBA9RNQ\SQLEXPRESS;Initial Catalog=YazılımYapımı;Integrated Security=True";
+        static string SqlPath = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\YazılımYapımıProje\DB\YazılımYapımıDB.mdf;Integrated Security=True;Connect Timeout=30";
+
         static string filename = "";
         public SoruEkleme()
         {
@@ -27,11 +28,13 @@ namespace Yazılım_Yapımı_Projesi
         }
         public void buttonSoruEkle_Click(object sender, EventArgs e)
         {
+            
             SaveFileDialog saveDlg = new SaveFileDialog();
             saveDlg.Filter = "Rich Text File|*.rtf";
             saveDlg.DefaultExt = "*.rtf";
             saveDlg.FilterIndex = 1;
             saveDlg.Title = "İçeriği Kaydet.";
+            // oluşturulan dosya bir alana konumlandırılır.
             
 
             DialogResult retval = saveDlg.ShowDialog();
@@ -44,7 +47,7 @@ namespace Yazılım_Yapımı_Projesi
             RichTextBoxStreamType stream_type;
             stream_type = RichTextBoxStreamType.RichText;       
             rtbSoruEkle.SaveFile(filename, stream_type);
-            MessageBox.Show(filename);
+            MessageBox.Show("Başarıyla Eklendi.");
             soruyuKaydet();
 
         }
@@ -53,6 +56,7 @@ namespace Yazılım_Yapımı_Projesi
         {
             SqlConnection baglanti = new SqlConnection(SqlPath);
             baglanti.Open();
+            // verileri girilen soru veritabanına eklenir.
             string sorgu = "INSERT INTO QuestionData(Path,RightAns,UnitID,SectionID) VALUES (@rtf,@RightAns,@UnitId,@SectionId)";
             SqlCommand komut = new SqlCommand(sorgu, baglanti);
             komut.Parameters.AddWithValue("@rtf",filename.ToString());
@@ -66,12 +70,14 @@ namespace Yazılım_Yapımı_Projesi
         {
             fontDialog1.ShowDialog();
             rtbSoruEkle.SelectionFont = fontDialog1.Font;
+            //font seçimi
         }
 
         private void buttonRenk_Click(object sender, EventArgs e)
         {
             colorDialog1.ShowDialog();
             rtbSoruEkle.SelectionColor = colorDialog1.Color;
+            //renk seçimi
         }
     }
 }

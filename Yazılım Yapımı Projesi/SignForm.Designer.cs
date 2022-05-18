@@ -78,7 +78,7 @@ namespace Yazılım_Yapımı_Projesi
             this.cbUserType.Items.AddRange(new object[] {
             "Öğrenci",
             "Öğretmen"});
-            this.cbUserType.Location = new System.Drawing.Point(132, 362);
+            this.cbUserType.Location = new System.Drawing.Point(154, 362);
             this.cbUserType.Name = "cbUserType";
             this.cbUserType.Size = new System.Drawing.Size(77, 21);
             this.cbUserType.TabIndex = 4;
@@ -138,27 +138,29 @@ namespace Yazılım_Yapımı_Projesi
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(67, 370);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(67, 363);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.Size = new System.Drawing.Size(85, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "UserType :";
             // 
             // btSign
             // 
+            this.btSign.BackColor = System.Drawing.Color.Khaki;
             this.btSign.Location = new System.Drawing.Point(237, 355);
             this.btSign.Name = "btSign";
             this.btSign.Size = new System.Drawing.Size(75, 44);
             this.btSign.TabIndex = 12;
             this.btSign.Text = "Kayıt Ol";
-            this.btSign.UseVisualStyleBackColor = true;
+            this.btSign.UseVisualStyleBackColor = false;
             this.btSign.Click += new System.EventHandler(this.btSign_Click);
             // 
             // SignForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(334, 411);
             this.Controls.Add(this.btSign);
             this.Controls.Add(this.label6);

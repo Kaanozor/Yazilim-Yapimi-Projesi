@@ -15,9 +15,7 @@ namespace Yazılım_Yapımı_Projesi
     public partial class SignForm : Form
     {
 
-        static string SqlPath = @"Data Source=DESKTOP-OBA9RNQ\SQLEXPRESS;Initial Catalog=YazılımYapımı;Integrated Security=True";
-
-
+        static string SqlPath = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\YazılımYapımıProje\DB\YazılımYapımıDB.mdf;Integrated Security=True;Connect Timeout=30";
         public SignForm()
         {
             InitializeComponent();
@@ -27,7 +25,7 @@ namespace Yazılım_Yapımı_Projesi
         {
             SqlConnection baglanti = new SqlConnection(SqlPath);
             baglanti.Open();
-            string sorgu = "INSERT INTO UserData(UserName_,Name_,Surname_,Mail_,Password_,UserType_) VALUES (@userName,@name,@surName,@mail,@password,@userType)";
+            string sorgu = "INSERT INTO UserData(UserName,Name,Surname,Mail,Password,UserTypeName) VALUES (@userName,@name,@surName,@mail,@password,@userType)";
             SqlCommand komut = new SqlCommand(sorgu, baglanti);
             komut.Parameters.AddWithValue("@userName", tbUsername.Text);
             komut.Parameters.AddWithValue("@name", tbName.Text);

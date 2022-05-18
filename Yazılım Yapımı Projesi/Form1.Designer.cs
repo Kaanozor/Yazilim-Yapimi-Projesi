@@ -40,7 +40,8 @@ namespace Yazılım_Yapımı_Projesi
             // 
             // tbsifre
             // 
-            this.tbsifre.BackColor = System.Drawing.Color.LightGray;
+            this.tbsifre.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbsifre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbsifre.Location = new System.Drawing.Point(90, 237);
             this.tbsifre.Name = "tbsifre";
             this.tbsifre.Size = new System.Drawing.Size(170, 20);
@@ -50,7 +51,8 @@ namespace Yazılım_Yapımı_Projesi
             // 
             // tbkadi
             // 
-            this.tbkadi.BackColor = System.Drawing.Color.LightGray;
+            this.tbkadi.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbkadi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbkadi.Location = new System.Drawing.Point(90, 202);
             this.tbkadi.Name = "tbkadi";
             this.tbkadi.Size = new System.Drawing.Size(170, 20);
@@ -61,48 +63,48 @@ namespace Yazılım_Yapımı_Projesi
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Khaki;
             this.button1.Location = new System.Drawing.Point(109, 446);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Kayıt Ol";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Khaki;
             this.button2.Location = new System.Drawing.Point(130, 276);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 39);
             this.button2.TabIndex = 3;
             this.button2.Text = "Giriş ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(100, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(90, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 186);
+            this.pictureBox1.Size = new System.Drawing.Size(170, 157);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(384, 561);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbkadi);
             this.Controls.Add(this.tbsifre);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

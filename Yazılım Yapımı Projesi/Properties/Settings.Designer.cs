@@ -44,5 +44,50 @@ namespace Yazılım_Yapımı_Projesi.Properties {
                 return ((string)(this["YazılımYapımıConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\win10\\OneDrive\\Deskt" +
+            "op\\DB\\YazılımYapımıDB.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string YazılımYapımıDBConnectionString {
+            get {
+                return ((string)(this["YazılımYapımıDBConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\YazılımYapımı" +
+            "DB.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string YazılımYapımıDBConnectionString1 {
+            get {
+                return ((string)(this["YazılımYapımıDBConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\win10\\OneDrive\\Desk" +
+            "top\\Yazılım Yapımı Projesi\\DB\\YazılımYapımıDB.mdf\";Integrated Security=True;Conn" +
+            "ect Timeout=30")]
+        public string YazılımYapımıDBConnectionString2 {
+            get {
+                return ((string)(this["YazılımYapımıDBConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\YazılımYapımıProje\\DB\\Yazı" +
+            "lımYapımıDB.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string YazılımYapımıDBConnectionString3 {
+            get {
+                return ((string)(this["YazılımYapımıDBConnectionString3"]));
+            }
+        }
     }
 }

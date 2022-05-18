@@ -13,7 +13,7 @@ namespace Yazılım_Yapımı_Projesi
 {
     public partial class Form1 : Form
     {
-        static string SqlPath = @"Data Source=DESKTOP-OBA9RNQ\SQLEXPRESS;Initial Catalog=YazılımYapımı;Integrated Security=True";
+        static string SqlPath = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\YazılımYapımıProje\DB\YazılımYapımıDB.mdf;Integrated Security=True;Connect Timeout=30";
         public Form1()
         {
             InitializeComponent();
@@ -34,19 +34,20 @@ namespace Yazılım_Yapımı_Projesi
         {
             SignForm signForm = new SignForm();
             signForm.Show();
+            //kayıt olma formuna yönlendirir.
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             SqlConnection sqlcon = new SqlConnection(SqlPath);
-
-            string query = "Select * from UserData Where UserName_ ='" + tbkadi.Text.Trim() + "'and Password_='" + tbsifre.Text.Trim() + "'";
+            //yazılan girdi ile veritabanı uyuşuyormu kontrol edilir.
+            string query = "Select * from UserData Where UserName='" + tbkadi.Text.Trim() + "'and Password='" + tbsifre.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
             if (dtbl.Rows.Count == 1)
-            {
-                DataRow[] result = dtbl.Select("UserType_='Öğrenci'");
+            { // user type 1 ise öğrenci formuna atanır
+                DataRow[] result = dtbl.Select("UserTypeName='Öğrenci'");
                 foreach (DataRow row in result)
                 {
                     ÖğrenciForm öğrenci = new ÖğrenciForm();
@@ -54,9 +55,9 @@ namespace Yazılım_Yapımı_Projesi
                     öğrenci.Show();
 
                 }
-                DataRow[] result1 = dtbl.Select("UserType_='Öğretmen'");
+                DataRow[] result1 = dtbl.Select("UserTypeName='Öğretmen'");
                 foreach (DataRow row in result1)
-                {
+                {// user type 2 ise öğrenci formuna atanır
                     SoruEkleme ogretmen = new SoruEkleme();
                     this.Hide();
                     ogretmen.Show();

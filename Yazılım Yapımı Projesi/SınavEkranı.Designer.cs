@@ -40,54 +40,60 @@ namespace Yazılım_Yapımı_Projesi
             // 
             this.rtbSoruYükle.Location = new System.Drawing.Point(12, 3);
             this.rtbSoruYükle.Name = "rtbSoruYükle";
+            this.rtbSoruYükle.ReadOnly = true;
             this.rtbSoruYükle.Size = new System.Drawing.Size(1131, 566);
             this.rtbSoruYükle.TabIndex = 0;
             this.rtbSoruYükle.Text = "";
             // 
             // buttonA
             // 
+            this.buttonA.BackColor = System.Drawing.Color.Khaki;
             this.buttonA.Location = new System.Drawing.Point(392, 575);
             this.buttonA.Name = "buttonA";
             this.buttonA.Size = new System.Drawing.Size(81, 32);
             this.buttonA.TabIndex = 1;
             this.buttonA.Text = "A Şıkkı";
-            this.buttonA.UseVisualStyleBackColor = true;
+            this.buttonA.UseVisualStyleBackColor = false;
             this.buttonA.Click += new System.EventHandler(this.buttonA_Click);
             // 
             // buttonB
             // 
+            this.buttonB.BackColor = System.Drawing.Color.Khaki;
             this.buttonB.Location = new System.Drawing.Point(479, 575);
             this.buttonB.Name = "buttonB";
             this.buttonB.Size = new System.Drawing.Size(75, 32);
             this.buttonB.TabIndex = 2;
             this.buttonB.Text = "B Şıkkı";
-            this.buttonB.UseVisualStyleBackColor = true;
+            this.buttonB.UseVisualStyleBackColor = false;
             this.buttonB.Click += new System.EventHandler(this.buttonB_Click);
             // 
             // buttonC
             // 
+            this.buttonC.BackColor = System.Drawing.Color.Khaki;
             this.buttonC.Location = new System.Drawing.Point(560, 575);
             this.buttonC.Name = "buttonC";
             this.buttonC.Size = new System.Drawing.Size(75, 32);
             this.buttonC.TabIndex = 3;
             this.buttonC.Text = "C Şıkkı";
-            this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonC.UseVisualStyleBackColor = false;
             this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
             // 
             // buttonD
             // 
+            this.buttonD.BackColor = System.Drawing.Color.Khaki;
             this.buttonD.Location = new System.Drawing.Point(641, 575);
             this.buttonD.Name = "buttonD";
             this.buttonD.Size = new System.Drawing.Size(75, 32);
             this.buttonD.TabIndex = 4;
             this.buttonD.Text = "D Şıkkı";
-            this.buttonD.UseVisualStyleBackColor = true;
+            this.buttonD.UseVisualStyleBackColor = false;
             this.buttonD.Click += new System.EventHandler(this.buttonD_Click);
             // 
             // SınavEkranı
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1155, 619);
             this.Controls.Add(this.buttonD);
             this.Controls.Add(this.buttonC);
